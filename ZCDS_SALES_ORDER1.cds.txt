@@ -14,5 +14,8 @@ on vbak.vbeln = vbap.vbeln
         vbap.kwmeng   // Order Qty
 }
 
+<<<<<<< HEAD
 hello world
+=======
+>>>>>>> 2b744a8d138293d68e2b2b03aa0405e1fefe6983
 hello world
