@@ -1,0 +1,18 @@
+@AbapCatalog.sqlViewName: 'ZSOCDS_SO1'
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Sales Order CDS'
+@Metadata.ignorePropagatedAnnotations: true
+define view ZCDS_SALES_ORDER1 as select from vbak
+inner join vbap
+on vbak.vbeln = vbap.vbeln
+{
+    key vbak.vbeln,   // Sales Order
+        vbak.auart,   // Order Type
+        vbap.posnr,   // Item
+        vbap.matnr,   // Material
+        vbap.kwmeng   // Order Qty
+}
+
+hello world
+hello world
